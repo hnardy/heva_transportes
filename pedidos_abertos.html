@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pedidos em Aberto - HEVA Transportes</title>
+    <style>
+        /* Estilos específicos para esta página */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>HEVA Transportes</h1>
+</div>
+
+<div id="sidebar">
+    <a href="pedidos.html">voltar</a>
+</div>
+
+<div id="content">
+    <h2>Pedidos em Aberto</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Remetente</th>
+                <th>Destinatário</th>
+                <th>Carga</th>
+                <th>Peso</th>
+                <th>Valor do Frete</th>
+                <th>Tempo Estimado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui você pode adicionar linhas com os detalhes de cada pedido em aberto -->
+            <tr>
+                <td>rua ABC</td>
+                <td>rua DEF</td>
+                <td>pacote amazon</td>
+                <td>1 kg</td>
+                <td>R$ 50,00</td>
+                <td>2 horas</td>
+            </tr>
+         
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+</div>
+<div id="content">
+    <div class="carros-disponiveis">
+        <h2>Carros Disponíveis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Carro</th>
+                    <th>Placa</th>
+                    <th>Distância</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: blue; color: white;">
+                    <td>Carro 1(Recomendado)</td>
+                    <td>ABC-1234</td>
+                    <td>2 km</td>
+                </tr>
+                <tr>
+                    <td>Carro 2</td>
+                    <td>DEF-5678</td>
+                    <td>10 km</td>
+                </tr>
+                <tr>
+                    <td>Carro 3</td>
+                    <td>GHI-9012</td>
+                    <td>80 km</td>
+                </tr>
+                <tr>
+                    <td>Carro 4</td>
+                    <td>JKL-3456</td>
+                    <td>200 km</td>
+                </tr>
+                <tr>
+                    <td>Carro 5</td>
+                    <td>MNO-7890</td>
+                    <td>120 km</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+<a href="pedidos_em_execucao.html" class="botao">calcular rota</a>
+</div>
+
+</body>
+</html>

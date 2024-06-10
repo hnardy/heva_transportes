@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+}
+
+#header {
+    background-color: #3498db; /* Azul */
+    color: #fff; /* Texto branco */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #2980b9; /* Linha inferior azul mais escuro */
+}
+
+#sidebar {
+    background-color: #2980b9; /* Azul mais escuro */
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 60px;
+    border-right: 2px solid #1f669a; /* Linha direita azul mais escuro */
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff; /* Texto branco */
+    border-bottom: 1px solid #1f669a; /* Linha inferior azul mais escuro */
+}
+
+#sidebar a:hover {
+    background-color: #4aa3df; /* Azul mais claro ao passar o mouse */
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+.botao {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 300px;
+    text-align: center;
+}
+.botao:hover {
+    background-color: darkblue;
+}
+
+.botao_vermelho {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 300px;
+    text-align: center;
+}
+.botao_vermelho:hover {
+    background-color: darkred;
+}

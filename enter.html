@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisição de Carro - HEVA Transportes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Se houver um arquivo CSS separado -->
+    <style>
+        /* Estilos específicos para esta página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-right: 20px;
+            height: 100%;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Requisitar Carro</h1>
+</div>
+
+<div class="sidebar">
+    <h2>Bem-vindo, [Nome do Usuário]</h2>
+    <!-- Adicione links para outras páginas ou informações adicionais -->
+</div>
+
+<div class="container">
+    <form action="process_requisicao.php" method="post">
+        <label for="remetente">Remetente:</label>
+        <input type="text" name="remetente" id="remetente" required>
+        
+        <label for="destino">Destino:</label>
+        <input type="text" name="destino" id="destino" required>
+        
+        <label for="peso">Peso (em kg):</label>
+        <input type="number" name="peso" id="peso" required>
+        
+        <label for="meio_pagamento">Meio de Pagamento:</label>
+        <select name="meio_pagamento" id="meio_pagamento">
+            <option value="meio1">Meio 1</option>
+            <option value="meio2">Meio 2</option>
+            <option value="meio3">Meio 3</option>
+        </select>
+        
+        <!-- Aqui você pode adicionar mais campos conforme necessário -->
+        
+        <a href="requisitado.html"><input type="search" value="Requisitar Carro"></a>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HEVA Transportes</title>
+    <style>
+        /* Estilos específicos para esta página */
+        #alerta-acidente {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #alerta-pedido {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #quantidade-pedidos {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>HEVA Transportes</h1>
+</div>
+
+<div id="alerta-acidente">
+    <strong>ALERTA DE ACIDENTE!</strong> Houve um acidente na rota.
+</div>
+
+<div id="alerta-pedido">
+    <strong>NOVO PEDIDO!</strong> Um novo pedido foi realizado.
+</div>
+
+<div id="sidebar">
+    <a href="frota.html">Frota</a>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="cliente.html">lado cliente</a>
+</div>
+
+<div id="content">
+  
+    <!-- Conteúdo adicional da página aqui -->
+    <div class="dashboard">
+        <div class="card">
+            <h3>Carros em Rota</h3>
+            <p>10</p>
+        </div>
+        <div class="card">
+            <h3>Carros em Standby</h3>
+            <p>5</p>
+        </div>
+        <div class="card">
+            <h3>Entregas Realizadas Hoje</h3>
+            <p>20</p>
+        </div>
+
+        <div class="card">
+            <h3>Ticket médio</h3>
+            <p>R$:30.11</p>
+        </div>
+        <div class="card">
+            <h3>Cancelamentos</h3>
+            <p>3</p>
+        </div>
+        <div class="card">
+            <h3>Pedidos pendentes</h3>
+            <p>3</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
